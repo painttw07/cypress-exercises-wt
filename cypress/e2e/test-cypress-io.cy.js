@@ -12,7 +12,7 @@ describe('My First Test', () => {
                 cy.wrap($btn).click()       
             }
         })
-        
+
         cy.wait(3000)
         cy.contains('li', 
             'Product',
@@ -26,3 +26,17 @@ describe('My First Test', () => {
  
 
 
+/*cy.contains('div.card-body', 'Forms')
+            .should('be.visible')
+            .click();
+
+        cy.url().should('include', '/forms')
+        cy.wait(2000)
+        cy.contains('div.header-text', 'Elements')
+            .should('be.visible')
+            .click();
+
+        cy.wait(2000)
+        cy.contains('Text Box')
+            .should('be.visible')
+            .click();*/
