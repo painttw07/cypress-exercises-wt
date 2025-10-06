@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 
 describe('OrangeHRM Test', () => {
+    
     beforeEach(() => {
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
     })
 
     it('Try to Log In ', () => {
-
         cy.contains('h5', 'Login')
             .should('be.visible')
 
@@ -26,8 +26,8 @@ describe('OrangeHRM Test', () => {
 
     },
     )
-    it('Try to Log In with invalid credentials', () => {
 
+    it('Try to Log In with invalid credentials', () => {
         cy.get('input[placeholder="Username"]')
             .should('be.visible')
             .type('Admin123')
@@ -48,10 +48,6 @@ describe('OrangeHRM Test', () => {
 
     },
     )
-
-
-
-
     //https://buggy.justtestit.org/
     //http://uitestingplayground.com/
 });
